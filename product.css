@@ -1,0 +1,296 @@
+*{
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: rgb(185, 148, 220);
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: blueviolet;
+
+  
+}
+
+.logo{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 2.2rem;
+font-weight: bolder;
+margin-left:20px;
+}
+
+.menu{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  float: left;
+}
+
+.listcontainer{
+
+  display: flex;
+  justify-content:space-between;
+}
+
+li{
+  margin-right: 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 15px;
+color:rgb(31, 7, 53);
+list-style: none;
+display: inline-block;
+transition-property: border;
+transition-timing-function:ease ;
+border-bottom:3px  ;
+}
+li:hover{
+  color:rgb(185, 148, 220);
+  border-bottom:3px solid rgb(31, 7, 53);
+}
+a{
+  text-decoration: none;
+}
+
+.prod1{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    
+    
+}
+
+.box{
+    max-width: 400px;
+    height:300px;
+    margin: 20px;
+    position: relative;
+   
+}
+
+.bx{
+position: absolute;
+bottom: 0px;
+padding: 5px 68px;
+text-align: center;
+background-color:rgba(255, 255, 255, 0.854);
+font-weight: bolder;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.bx:hover{
+background-color: blueviolet;
+}
+
+.afro{
+
+  align-items: center;
+  background-color:white;
+margin-top: 50px;
+font-size: 30px;
+font-weight: bolder;
+padding-left:11px ;
+padding-right:15px ;
+
+}
+#box1{
+  background-image: url(pic1.jpg);
+  
+}
+
+#box2{
+  background-image: url(pic2a.jpg);
+  background-position:center;
+}
+#box3{
+  background-image: url(pic3.jpg);
+  
+}
+#box4{
+  background-image: url(pic4.jpg);
+ 
+  
+}#box5{
+  background-image: url(pic5.jpg);
+  
+}
+#box6{
+  background-image: url(pic6.jpg);
+  
+}
+
+
+#box7{
+  background-image: url(pic7.jpg);
+  
+}
+#box8{
+  background-image: url(pic8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#box9{
+  background-image: url(pic9.jpg);
+  
+}
+#box10{
+  background-image: url(pic10.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.diss{
+ 
+  height:200px;
+  width: 500px;
+  background:rgba(255, 255, 255, 0.2);
+  display:flex;
+  align-items: center;
+  backdrop-filter:blur(3px);
+  border-right: 2px solid rgba(255, 255, 255, 0.3);
+  
+}
+
+.diss:hover{
+  backdrop-filter:blur(35px); 
+}
+
+.yard{
+  margin-top:30px;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+  color:blueviolet;
+  margin-bottom:40px ;
+  
+}
+.per{
+font-size: 150px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bolder;
+color:blueviolet;
+margin-bottom:40px ;
+}
+
+.root{
+  font-size:100px;
+}
+.coverpromo{
+  margin-top: 20px;
+  height:200px;
+  width:100%;
+  display:flex;
+  align-items: center;
+background-image: url(pic4.jpg);
+border: 3px solid blueviolet;
+}
+
+.buy{
+  position: absolute;
+  bottom: 0px;
+  margin-left: 250px;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background-color:blueviolet;
+  font-weight:1000;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 5px;
+  color:white;
+}
+
+.buy:hover{
+  background-color:rgb(185, 148, 220);
+  color:black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:600px) {
+  .nav{
+   background-color:rgb(0, 0, 0);
+   
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    width:600px;
+    flex-direction: column;
+
+}
+
+
+
+.listcontainer{
+  display: grid;
+  flex-direction: column;
+  margin-left: 100px;
+  height: 200px;
+  margin-top: 20px;
+}
+.logo{
+  font-size: 1.5rem;
+  color: green;
+
+}
+li{
+  color: white;
+}
+li:hover{
+color: bisque;
+display: inline-block;
+}
+
+.box1{
+  width: 300px;
+  height: 250px;
+  position: absolute;
+  left: 50px;
+  top:300px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border:5px solid blueviolet;
+}
+
+
+}
+
+@media (max-width:800px) {
+  .box{
+    max-width: 200px;
+    height:100px;
+    margin: 20px;
+    position: relative;
+   
+}
+
+.prod1{
+  display: flex;
+}
+}
+
+
+
+
+
+ 

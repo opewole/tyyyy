@@ -1,0 +1,112 @@
+*{
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color:rgb(185, 148, 220) ;
+   }
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: blueviolet;
+
+  
+}
+
+.logo{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 2.2rem;
+font-weight: bolder;
+margin-left:20px;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  float:left;
+}
+
+.listcontainer{
+
+  display: flex;
+  justify-content:space-between;
+}
+
+li{
+  margin-right: 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 15px;
+color:rgb(31, 7, 53);
+list-style: none;
+transition-property: border;
+transition-timing-function:ease ;
+border-bottom:3px  ;
+}
+li:hover{
+  color:rgb(185, 148, 220);
+  border-bottom:3px solid rgb(31, 7, 53);  
+}
+a{
+  text-decoration: none;
+}
+
+li:active{
+    color:rgb(185, 148, 220);
+  border-bottom:3px solid rgb(31, 7, 53);  
+}
+
+
+.gallery{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.finest{
+  justify-content: center;
+  display: flex;
+  margin-top: 40px;
+  font-weight: bolder;
+  font-size:20px ;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  border-bottom: 3px solid black;
+  max-width: 600px;
+  padding-bottom: 20px ;
+  padding-left:100px;
+  padding-right:100px;
+}
+.foundation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container{
+  width:35%;  
+  flex-direction: column;
+  margin: 5px; 
+}
+.photo{
+ width: 100%; 
+ margin: 5px; 
+ border: 3px solid blueviolet;
+ transition-property: all;
+ transition-duration: 2s;
+ transition-timing-function: ease;
+
+}
+
+.photo:hover{
+transform: perspective(50px) translateZ(3px);
+border: 3px solid rgb(43, 141, 226);
+}
